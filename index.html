@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Sreevidya Jayachandran — a storybook-style personal research website."/>
+  <title>Sreevidya Jayachandran — A Field Notebook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="progress"><span id="progressBar"></span></div>
+
+  <header class="topbar">
+    <a href="#cover" class="nameplate">
+      <img src="assets/quill.svg" alt="" aria-hidden="true"/>
+      <div>
+        <strong>Sreevidya Jayachandran</strong>
+        <span>a small book of research questions</span>
+      </div>
+    </a>
+    <nav>
+      <a href="#prologue">Prologue</a>
+      <a href="#chapters">Chapters</a>
+      <a href="#notes">Notes</a>
+      <a href="#epilogue">Epilogue</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cover page" id="cover">
+      <div class="cover-copy">
+        <p class="mini">for people who prefer stories to slogans</p>
+        <h1>A field notebook about <em>models, machines,</em> and the questions in between.</h1>
+        <p class="intro">
+          Hi, I’m Sreevidya. I began in mechanical engineering, wandered into applied machine learning,
+          and gradually found myself most interested in one kind of question:
+          <strong>how do intelligent systems actually work, and how do we know when to trust them?</strong>
+        </p>
+        <div class="actions">
+          <a class="btn dark" href="#prologue">Open the book</a>
+          <a class="btn ghost" href="mailto:vidya2k04@gmail.com">Write to me</a>
+        </div>
+        <p class="scribble">not a brand deck.<br>a thinking-in-public space.</p>
+      </div>
+
+      <figure class="portrait-polaroid">
+        <div class="tape left"></div>
+        <div class="tape right"></div>
+        <img src="assets/sreevidya-portrait.png" alt="Portrait of Sreevidya Jayachandran"/>
+        <figcaption>
+          <span>currently tracing:</span>
+          interpretability, factuality, evaluation, and useful failure analysis
+        </figcaption>
+      </figure>
+
+      <img class="stars" src="assets/stars.svg" alt="" aria-hidden="true"/>
+      <div class="page-no">cover</div>
+    </section>
+
+    <section class="page split" id="prologue">
+      <div class="chapter-marker">
+        <p>prologue</p>
+        <h2>How this story starts</h2>
+      </div>
+
+      <div class="prose">
+        <p class="lead">
+          I like systems that reveal themselves slowly. That used to mean aircraft structures,
+          loads, and failure. Now it means machine learning systems and language models.
+        </p>
+        <p>
+          Across both worlds, what stays constant is the instinct: understand the system deeply enough
+          to know not just when it works, but how it fails. That is probably why I ended up caring about
+          interpretability, reliability, and evaluation.
+        </p>
+
+        <div class="margin-card">
+          <h3>The through-line</h3>
+          <p>
+            From fatigue analysis to predictive modeling to language models, I keep returning to the same
+            habit of mind: look under the surface, ask what the output hides, and make sense of the mechanism.
+          </p>
+          <img src="assets/path-line.svg" alt="" aria-hidden="true"/>
+        </div>
+      </div>
+      <div class="page-no">01</div>
+    </section>
+
+    <section class="page" id="chapters">
+      <div class="chapter-title">
+        <p>chapter pages</p>
+        <h2>The route was not very linear.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="chapter-card tilt-a">
+          <span class="tab">chapter I</span>
+          <h3>Engineering and failure</h3>
+          <p>
+            My first serious research instinct formed around physical systems: stress, fatigue, and residual life.
+            At DRDO, I worked on flight-data-based fatigue damage estimation and saw how reliability becomes meaningful
+            only when you examine failure carefully.
+          </p>
+          <small>DRDO • MATLAB • fatigue analysis</small>
+        </article>
+
+        <article class="chapter-card tilt-b">
+          <span class="tab">chapter II</span>
+          <h3>Applied ML in messy environments</h3>
+          <p>
+            At Daimler India Commercial Vehicles, the systems became less physical and more behavioral.
+            I built predictive models and analytics workflows on large CRM data, where explanation and usefulness
+            mattered just as much as performance.
+          </p>
+          <small>Daimler • predictive modeling • SHAP</small>
+        </article>
+
+        <article class="chapter-card tilt-c">
+          <span class="tab">chapter III</span>
+          <h3>Questions about language models</h3>
+          <p>
+            More recently, my curiosity shifted toward model behavior itself: internal representations, hallucinations,
+            factuality, evaluation, and what model outputs fail to tell us about what the model knows.
+          </p>
+          <small>LLMs • interpretability • evaluation</small>
+        </article>
+      </div>
+      <img class="leaf" src="assets/leaf-sketch.svg" alt="" aria-hidden="true"/>
+      <div class="page-no">02</div>
+    </section>
+
+    <section class="page questions-page">
+      <div class="chapter-title">
+        <p>chapter pages</p>
+        <h2>Questions I keep dog-earing.</h2>
+      </div>
+
+      <div class="question-stack">
+        <article class="question-card">
+          <h3>What does a model know before it says it?</h3>
+          <p>I’m drawn to the gap between encoded information and generated response, especially in factuality and hallucination settings.</p>
+        </article>
+        <article class="question-card">
+          <h3>Can interpretability help us debug, not just explain?</h3>
+          <p>The explanations I care about should reveal mechanisms, failure modes, or levers for intervention.</p>
+        </article>
+        <article class="question-card">
+          <h3>How much progress is really just better evaluation?</h3>
+          <p>Sharper questions, stronger test cases, and honest edge-case analysis often matter more than polished benchmark headlines.</p>
+        </article>
+      </div>
+      <p class="penciled">the work I want to do sits somewhere around these questions.</p>
+      <div class="page-no">03</div>
+    </section>
+
+    <section class="page work-page" id="notes">
+      <div class="chapter-title">
+        <p>field notes</p>
+        <h2>Selected work, written like fragments.</h2>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-piece large">
+          <span>note A</span>
+          <h3>Applied interpretability experiments</h3>
+          <p>
+            Small controlled experiments on model representations, attribution, and failure analysis in language models.
+            I’m especially interested in linking internal behavior to what a model eventually generates.
+          </p>
+        </article>
+        <article class="work-piece">
+          <span>note B</span>
+          <h3>CRM predictive modeling</h3>
+          <p>
+            Large-scale customer analytics, segmentation, and predictive modeling with Random Forests, Logistic Regression,
+            clustering, and SHAP-based explanation.
+          </p>
+        </article>
+        <article class="work-piece">
+          <span>note C</span>
+          <h3>Aircraft fatigue analysis</h3>
+          <p>
+            Residual-life estimation workflows using flight-recorder inputs, S–N curves, and Miner’s rule in a reliability context.
+          </p>
+        </article>
+        <article class="work-piece aside">
+          <span>margin note</span>
+          <h3>Things I also build</h3>
+          <p>
+            Flask and React apps, composite-property prediction tools, telemetry models,
+            speech pipelines with Whisper, and small computer-vision prototypes.
+          </p>
+        </article>
+      </div>
+
+      <div class="notebook">
+        <h3>A few notes to self</h3>
+        <ul>
+          <li>Build before you claim.</li>
+          <li>Measure what breaks, not just what averages well.</li>
+          <li>Useful research should survive contact with reality.</li>
+          <li>Curiosity is a stronger compass than polish.</li>
+        </ul>
+      </div>
+      <div class="page-no">04</div>
+    </section>
+
+    <section class="page end" id="epilogue">
+      <div class="end-copy">
+        <p class="mini">epilogue</p>
+        <h2>I’m still becoming the kind of researcher I want to be.</h2>
+        <p>
+          That is why this website feels like a storybook and not a finished brochure. It’s less about appearing complete
+          and more about showing the thread that connects what I’ve worked on so far.
+        </p>
+        <p>
+          If your work touches reliable AI, language-model behavior, interpretability, evaluation, or thoughtful product-building,
+          I’d love to talk.
+        </p>
+        <div class="actions">
+          <a class="btn dark" href="mailto:vidya2k04@gmail.com">Email me</a>
+        </div>
+        <p class="signature">— Sreevidya</p>
+      </div>
+      <div class="contact-card">
+        <h3>Leave a bookmark</h3>
+        <p><strong>Email</strong><br>vidya2k04@gmail.com</p>
+        <p><strong>Location</strong><br>India</p>
+        <p><strong>Open to</strong><br>research internships, collaborations, and thoughtful conversations</p>
+      </div>
+      <div class="page-no">fin.</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Sreevidya Jayachandran</p>
+    <p>Designed like a little book because the work is still unfolding.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
